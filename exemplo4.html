@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
             font-size: 16px;
             font-family: 'Courier New', Courier, monospace;
         }
+
         /*Container fundo preno, sombra neon verde, font neon verde*/
         .container {
             border: 1px solid #442c2c;
@@ -22,27 +24,49 @@
             background-color: rgb(255, 255, 255);
             border-radius: 0.5rem;
         }
+
+        .titulo {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .descricao {
+            font-size: .8rem;
+        }
+
+        .preco {
+            font-size: 1.6rem;
+            font-weight: bolder;
+            text-align: right;
+        }
+
+        img {
+            width: 10rem;
+            height: 5rem;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-    <script>
-        /*
-        *Estrutura sequencial.
-        *Comandos de saida
-        *Comandos de entrada
-        *Template string e interpretação
-        */
-       
-        var nome = prompt ("Informe o nome do produto:");
-        var descricao = prompt ("Informe a descriçao do produto:");
-        var preco = prompt ("Informe o preço do produto:");
-       
-      
-       document.write(`<h1 class="titulo">${nome}</h1>`);
-       document.write(`<article class="descricao">${descricao}</article>`);
-       document.write(`<aside class="preco">${preco}</aside>`);
-    </script>
+        <script>
+            /*
+            *Estrutura sequencial.
+            *Comandos de saida
+            *Comandos de entrada
+            *Template string e interpretação
+            */
+
+            var nome = prompt("Informe o nome do produto:");
+            var descricao = prompt("Informe a descriçao do produto:");
+            var preco = prompt("Informe o preço do produto:");
+
+            document.write(`<img src='image.png' alt='logo de supermercado'/>`);
+            document.write(`<h1 class="titulo">${nome}</h1>`);
+            document.write(`<article class="descricao">${descricao}</article>`);
+            document.write(`<aside class="preco">${preco}</aside>`);
+        </script>
     </div>
 </body>
+
 </html>
